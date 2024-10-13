@@ -1,18 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './Layout';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div className='text-4xl text-center text-red-600'>
-        We are ready to go!!!
-      </div>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="forgot-password" element={<ForgotPassword />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
