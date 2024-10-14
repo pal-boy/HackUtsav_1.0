@@ -2,9 +2,10 @@
   "name": "plate_again_backend",
   "version": "1.0.0",
   "description": "This backend is for our pate again project which is food redistribution platform.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "plateAgain",
@@ -14,5 +15,8 @@
     "food"
   ],
   "author": "Aakash Pal Akhil Raj",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+      "nodemon": "^3.1.7"
+    }
 }
