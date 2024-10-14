@@ -1,0 +1,18 @@
+{
+  "name": "plate_again_backend",
+  "version": "1.0.0",
+  "description": "This backend is for our pate again project which is food redistribution platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "plateAgain",
+    "donators",
+    "ngos",
+    "volunteers",
+    "food"
+  ],
+  "author": "Aakash Pal Akhil Raj",
+  "license": "ISC"
+}
