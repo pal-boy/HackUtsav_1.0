@@ -1,0 +1,1 @@
+# This readme file contains all basic informaton about the backend of our project Plate Again
